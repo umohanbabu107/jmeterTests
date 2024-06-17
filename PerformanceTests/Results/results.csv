@@ -1,0 +1,61 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1718437909672,2622,HTTP Request ,200,OK,Thread Group 1-2,text,true,,5375,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1107,0,753
+1718437909672,1108,HTTP Request -0,301,Moved Permanently,Thread Group 1-2,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1107,0,753
+1718437910781,1513,HTTP Request -1,200,OK,Thread Group 1-2,text,true,,4618,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1512,0,998
+1718437909761,2651,HTTP Request ,200,OK,Thread Group 1-3,text,true,,5379,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1018,0,666
+1718437909761,1019,HTTP Request -0,301,Moved Permanently,Thread Group 1-3,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1018,0,666
+1718437910781,1631,HTTP Request -1,200,OK,Thread Group 1-3,text,true,,4622,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1631,0,998
+1718437909862,2551,HTTP Request ,200,OK,Thread Group 1-4,text,true,,5388,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,797,0,558
+1718437909862,800,HTTP Request -0,301,Moved Permanently,Thread Group 1-4,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,797,0,558
+1718437910666,1747,HTTP Request -1,200,OK,Thread Group 1-4,text,true,,4631,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1747,0,1113
+1718437909672,2788,HTTP Request ,200,OK,Thread Group 1-1,text,true,,5369,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,988,0,751
+1718437909672,990,HTTP Request -0,301,Moved Permanently,Thread Group 1-1,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,988,0,751
+1718437910664,1796,HTTP Request -1,200,OK,Thread Group 1-1,text,true,,4612,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1796,0,1114
+1718437910361,2112,HTTP Request ,200,OK,Thread Group 1-9,text,true,,5397,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,420,0,190
+1718437910361,420,HTTP Request -0,301,Moved Permanently,Thread Group 1-9,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,420,0,190
+1718437910783,1690,HTTP Request -1,200,OK,Thread Group 1-9,text,true,,4640,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1690,0,995
+1718437909962,2534,HTTP Request ,200,OK,Thread Group 1-5,text,true,,5372,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,818,0,543
+1718437909962,818,HTTP Request -0,301,Moved Permanently,Thread Group 1-5,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,818,0,543
+1718437910782,1714,HTTP Request -1,200,OK,Thread Group 1-5,text,true,,4615,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1714,0,996
+1718437910159,2383,HTTP Request ,200,OK,Thread Group 1-7,text,true,,5384,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,499,0,261
+1718437910159,503,HTTP Request -0,301,Moved Permanently,Thread Group 1-7,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,499,0,261
+1718437910663,1879,HTTP Request -1,200,OK,Thread Group 1-7,text,true,,4627,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1879,0,1115
+1718437910059,2503,HTTP Request ,200,OK,Thread Group 1-6,text,true,,5391,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,601,0,364
+1718437910059,603,HTTP Request -0,301,Moved Permanently,Thread Group 1-6,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,601,0,364
+1718437910666,1896,HTTP Request -1,200,OK,Thread Group 1-6,text,true,,4634,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1896,0,1112
+1718437910259,2339,HTTP Request ,200,OK,Thread Group 1-8,text,true,,5381,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,524,0,246
+1718437910459,2139,HTTP Request ,200,OK,Thread Group 1-10,text,true,,5392,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,461,0,231
+1718437910259,524,HTTP Request -0,301,Moved Permanently,Thread Group 1-8,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,524,0,246
+1718437910459,461,HTTP Request -0,301,Moved Permanently,Thread Group 1-10,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,461,0,231
+1718437910784,1814,HTTP Request -1,200,OK,Thread Group 1-8,text,true,,4624,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1814,0,995
+1718437910921,1677,HTTP Request -1,200,OK,Thread Group 1-10,text,true,,4635,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,1677,0,858
+1718437912298,579,HTTP Request ,200,OK,Thread Group 1-2,text,true,,5374,318,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,187,0,0
+1718437912298,187,HTTP Request -0,301,Moved Permanently,Thread Group 1-2,text,true,,757,159,10,10,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,187,0,0
+1718437912485,392,HTTP Request -1,200,OK,Thread Group 1-2,text,true,,4617,159,10,10,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,391,0,0
+1718437912413,590,HTTP Request ,200,OK,Thread Group 1-4,text,true,,5385,318,9,9,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,186,0,0
+1718437912413,186,HTTP Request -0,301,Moved Permanently,Thread Group 1-4,text,true,,757,159,9,9,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,186,0,0
+1718437912599,404,HTTP Request -1,200,OK,Thread Group 1-4,text,true,,4628,159,9,9,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,404,0,0
+1718437912413,595,HTTP Request ,200,OK,Thread Group 1-3,text,true,,5395,318,8,8,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,198,0,0
+1718437912413,198,HTTP Request -0,301,Moved Permanently,Thread Group 1-3,text,true,,757,159,8,8,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,198,0,0
+1718437912611,397,HTTP Request -1,200,OK,Thread Group 1-3,text,true,,4638,159,8,8,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,397,0,0
+1718437912461,566,HTTP Request ,200,OK,Thread Group 1-1,text,true,,5370,318,7,7,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,194,0,0
+1718437912461,194,HTTP Request -0,301,Moved Permanently,Thread Group 1-1,text,true,,757,159,7,7,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,194,0,0
+1718437912656,371,HTTP Request -1,200,OK,Thread Group 1-1,text,true,,4613,159,7,7,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,371,0,0
+1718437912474,579,HTTP Request ,200,OK,Thread Group 1-9,text,true,,5389,318,6,6,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,185,0,0
+1718437912474,185,HTTP Request -0,301,Moved Permanently,Thread Group 1-9,text,true,,757,159,6,6,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,185,0,0
+1718437912660,393,HTTP Request -1,200,OK,Thread Group 1-9,text,true,,4632,159,6,6,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,392,0,0
+1718437912497,611,HTTP Request ,200,OK,Thread Group 1-5,text,true,,5380,318,5,5,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,205,0,0
+1718437912497,205,HTTP Request -0,301,Moved Permanently,Thread Group 1-5,text,true,,757,159,5,5,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,205,0,0
+1718437912703,405,HTTP Request -1,200,OK,Thread Group 1-5,text,true,,4623,159,5,5,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,405,0,0
+1718437912545,627,HTTP Request ,200,OK,Thread Group 1-7,text,true,,5394,318,4,4,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,191,0,0
+1718437912545,191,HTTP Request -0,301,Moved Permanently,Thread Group 1-7,text,true,,757,159,4,4,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,191,0,0
+1718437912736,436,HTTP Request -1,200,OK,Thread Group 1-7,text,true,,4637,159,4,4,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,436,0,0
+1718437912563,616,HTTP Request ,200,OK,Thread Group 1-6,text,true,,5389,318,3,3,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,192,0,0
+1718437912563,192,HTTP Request -0,301,Moved Permanently,Thread Group 1-6,text,true,,757,159,3,3,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,192,0,0
+1718437912756,423,HTTP Request -1,200,OK,Thread Group 1-6,text,true,,4632,159,3,3,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,423,0,0
+1718437912599,688,HTTP Request ,200,OK,Thread Group 1-8,text,true,,5372,318,2,2,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,212,0,0
+1718437912599,688,HTTP Request ,200,OK,Thread Group 1-10,text,true,,5371,318,2,2,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,191,0,0
+1718437912599,212,HTTP Request -0,301,Moved Permanently,Thread Group 1-8,text,true,,757,159,2,2,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,212,0,0
+1718437912599,191,HTTP Request -0,301,Moved Permanently,Thread Group 1-10,text,true,,757,159,2,2,http://opensource-demo.orangehrmlive.com/web/index.php/auth/login,191,0,0
+1718437912812,475,HTTP Request -1,200,OK,Thread Group 1-8,text,true,,4615,159,2,2,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,475,0,0
+1718437912791,496,HTTP Request -1,200,OK,Thread Group 1-10,text,true,,4614,159,2,2,https://opensource-demo.orangehrmlive.com/web/index.php/auth/login,496,0,0
