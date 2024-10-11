@@ -1,0 +1,44 @@
+name: Run JMeter Tests
+
+on:
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  run-jmeter:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Install the latest JDK (openjdk-17) and JMeter
+      - name: Install JDK and JMeter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-17-jdk
+          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.tgz
+          tar -xvzf apache-jmeter-5.6.tgz
+          export JMETER_HOME=$(pwd)/apache-jmeter-5.6
+          export PATH=$JMETER_HOME/bin:$PATH
+
+      # Define a timestamp for unique file names
+      - name: Set timestamp
+        run: echo "TIMESTAMP=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+
+      # Run JMeter script in Non-GUI mode and generate CSV results with timestamp
+      - name: Run JMeter tests in Non-GUI mode
+        run: |
+          jmeter -n -t FlightBookingDemoForNonGUIModeExecution.jmx -l results_${{ env.TIMESTAMP }}.csv
+
+      # Generate HTML report from the CSV results with timestamp
+      - name: Generate HTML report
+        run: |
+          jmeter -g results_${{ env.TIMESTAMP }}.csv -o html_report_${{ env.TIMESTAMP }}
+
+      # Upload the report to GitHub Actions artifacts
+      - name: Upload report to GitHub artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: jmeter-report-${{ env.TIMESTAMP }}
+          path: html_report_${{ env.TIMESTAMP }}
