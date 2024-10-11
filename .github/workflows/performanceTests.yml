@@ -38,7 +38,7 @@ jobs:
 
       # Upload the report to GitHub Actions artifacts
       - name: Upload report to GitHub artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: jmeter-report-${{ env.TIMESTAMP }}
           path: html_report_${{ env.TIMESTAMP }}
