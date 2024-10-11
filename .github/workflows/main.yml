@@ -24,8 +24,8 @@ jobs:
       - name: JMeter Test
         uses: QAInsights/PerfAction@v5.6.2
         with:
-          test-plan-path: ./jmeterTests/blob/Main/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx
-          args: "-e -o ./reports_${{ env.TIMESTAMP }}/html/"
+          test-plan-path: ./jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx
+          args: "-l result_${{ env.TIMESTAMP }}.jtl -e -o ./reports_${{ env.TIMESTAMP }}/html/"
 
       # Upload raw results (result.jtl) with timestamp
       - name: Upload Results
