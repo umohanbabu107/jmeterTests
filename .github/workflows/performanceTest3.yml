@@ -12,7 +12,7 @@ jobs:
       - name: Run JMeter Action on a test
         uses: rbhadti94/apache-jmeter-action@v0.5.0
         with:
-          testFilePath: jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx
+          testFilePath: https://github.com/umohanbabu107/jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx
           outputReportsFolder: reports/
           args: "--loglevel INFO"
 
