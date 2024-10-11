@@ -24,7 +24,7 @@ jobs:
         uses: QAInsights/PerfAction@v5.6.2
         with:
           test-plan-path: ./jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx
-          args: "-n -t https://github.com/umohanbabu107/jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx -l ./target/reports/csvresult_${{ env.TIMESTAMP }}.csv -e -o ./target/reports/htmlreports_${{ env.TIMESTAMP }}"
+          args: "-n -t https://github.com/umohanbabu107/jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx -l target/reports/csvresult_${{ env.TIMESTAMP }}.csv -e -o target/reports/htmlreports_${{ env.TIMESTAMP }}"
 
       # Debugging: List files in the current directory
       - name: List files
@@ -35,5 +35,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: jmeter-html-reports-${{ env.TIMESTAMP }}
-          path: target/reports/htmlreports_${{ env.TIMESTAMP }}
+          path: target/reports
           if-no-files-found: error
