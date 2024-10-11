@@ -1,6 +1,5 @@
 name: JMeter Performance Test
 
-# Manual trigger
 on:
   workflow_dispatch:
 
@@ -25,7 +24,7 @@ jobs:
         uses: QAInsights/PerfAction@v5.6.2
         with:
           test-plan-path: ./jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx
-          args: "-l result_${{ env.TIMESTAMP }}.jtl -e -o ./reports_${{ env.TIMESTAMP }}/html/"
+          args: "-n -t ./jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx -l result_${{ env.TIMESTAMP }}.jtl -e -o ./reports_${{ env.TIMESTAMP }}/html/"
 
       # Upload raw results (result.jtl) with timestamp
       - name: Upload Results
