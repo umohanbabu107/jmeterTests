@@ -13,32 +13,33 @@ jobs:
         uses: actions/checkout@v2
 
       # Install the latest JDK (openjdk-17) and JMeter
-      - name: Install JDK and JMeter
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y openjdk-17-jdk
-          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.tgz
-          tar -xvzf apache-jmeter-5.6.tgz
-          export JMETER_HOME=$(pwd)/apache-jmeter-5.6
-          export PATH=$JMETER_HOME/bin:$PATH
+      - name: Setup Jmeter
+        uses: tush-tr/setup-jmeter@v1.1.0
 
       # Define a timestamp for unique file names
       - name: Set timestamp
         run: echo "TIMESTAMP=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
 
+        # Create reports directory with timestamp
+      - name: Create reports directory
+        run: mkdir -p target/reports
+
       # Run JMeter script in Non-GUI mode and generate CSV results with timestamp
       - name: Run JMeter tests in Non-GUI mode
         run: |
-          jmeter -n -t FlightBookingDemoForNonGUIModeExecution.jmx -l results_${{ env.TIMESTAMP }}.csv
+          jmeter -n -t https://github.com/umohanbabu107/jmeterTests/PerformanceTests/FlightBookingDemoForNonGUIModeExecution.jmx -l home/runner/work/jmeterTests/jmeterTests/target/reports/csvresult_${{ env.TIMESTAMP }}.csv -e -o home/runner/work/jmeterTests/jmeterTests/target/reports/htmlreports_${{ env.TIMESTAMP }}
 
       # Generate HTML report from the CSV results with timestamp
       - name: Generate HTML report
         run: |
           jmeter -g results_${{ env.TIMESTAMP }}.csv -o html_report_${{ env.TIMESTAMP }}
 
-      # Upload the report to GitHub Actions artifacts
-      - name: Upload report to GitHub artifacts
+      # Upload HTML reports with timestamp
+      - name: Upload HTML Reports
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: jmeter-report-${{ env.TIMESTAMP }}
-          path: html_report_${{ env.TIMESTAMP }}
+          name: jmeter-html-reports-${{ env.TIMESTAMP }}
+          path: /home/runner/work/jmeterTests/jmeterTests/target/reports
+          if-no-files-found: error
+
